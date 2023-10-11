@@ -12,6 +12,11 @@ const app = () => {
         reply.send({ result: eval(code) })
     })
 
+    fastify.get('/custom/:pippo', async (request, reply) => {
+        const pippo = request.params.pippo
+        reply.send({ hello: pippo })
+    })
+
     return fastify
 }
 
