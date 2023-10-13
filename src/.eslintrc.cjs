@@ -17,10 +17,6 @@ module.exports = {
             }
         }
     ],
-    "ignorePatterns": [
-        "node_modules",
-        "test"
-    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
