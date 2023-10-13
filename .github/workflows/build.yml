@@ -25,12 +25,15 @@ jobs:
       - name: Test coverage
         working-directory: ./src
         run: npm run test:coverage
-      - name: Run ESLint
+      # - name: Run ESLint
+      #   working-directory: ./src
+      #   run: npm run eslint || true
+      # - name: Format eslint for SonarQube
+      #   working-directory: ./utils
+      #   run: node convertPaths.js
+      - name: Run Custom ESLint
         working-directory: ./src
-        run: npm run eslint || true
-      - name: Format eslint for SonarQube
-        working-directory: ./utils
-        run: node convertPaths.js
+        run: npm run eslint:custom_sonar || true
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

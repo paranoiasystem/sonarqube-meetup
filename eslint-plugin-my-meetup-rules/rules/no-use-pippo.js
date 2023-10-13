@@ -5,7 +5,6 @@ module.exports = {
         description: 'Non utilizzare "pippo" come nome per variabili o costanti.',
         category: 'bad-practice',
         recommended: true,
-        
         url: 'https://raw.githubusercontent.com/paranoiasystem/sonarqube-meetup/main/eslint-plugin-my-meetup-rules/docs/no-use-pippo.md',
       },
       severity: 2, 
