@@ -4,7 +4,7 @@
         "start": "node server.js",
         "test": "tap test/*.js",
         "test:coverage": "tap test/*.js --coverage-report=lcov --timeout=60",    
-        "eslint": "eslint . --ext .js -f ../utils/sonarqube_formatter.js -o eslint_report.json"
+        "eslint": "eslint . --ext .js -f json -o eslint_report.json"
     },
     "dependencies": {
         "eslint-plugin-my-meetup-rules": "file:../eslint-plugin-my-meetup-rules",
