@@ -26,8 +26,8 @@ jobs:
         working-directory: ./src
         run: npm run test:coverage
       - name: Run ESLint
-        working-directory: ./src
-        run: npm run eslint || true
+        working-directory: .
+        run: cd src && npm run eslint || true
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
