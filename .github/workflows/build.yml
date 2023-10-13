@@ -22,12 +22,12 @@ jobs:
       - name: Install dependencies
         working-directory: ./src
         run: npm install
-      - name: Run ESLint
-        working-directory: ./src
-        run: npx eslint . --ext .js -f json -o eslint_report.json || true
       - name: Test coverage
         working-directory: ./src
         run: npm run test:coverage
+      - name: Run ESLint
+        working-directory: ./src
+        run: npm run eslint
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
