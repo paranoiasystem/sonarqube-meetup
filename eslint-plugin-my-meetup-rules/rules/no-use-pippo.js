@@ -7,7 +7,7 @@ module.exports = {
         recommended: true,
         url: 'https://raw.githubusercontent.com/paranoiasystem/sonarqube-meetup/main/eslint-plugin-my-meetup-rules/docs/no-use-pippo.md',
       },
-      severity: 2, 
+      severity: 1, 
     },
     create(context) {
         return {
