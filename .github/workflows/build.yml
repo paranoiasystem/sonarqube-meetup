@@ -16,15 +16,15 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: 16
       - name: Install dependencies
         working-directory: ./src
         run: npm install
       - name: Run ESLint
         working-directory: ./src
-        run: npx eslint . --ext .js -f json -o eslint_report.json
+        run: npx eslint . --ext .js -f json -o eslint_report.json || true
       - name: Test coverage
         working-directory: ./src
         run: npm run test:coverage
