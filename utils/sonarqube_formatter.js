@@ -14,7 +14,7 @@ module.exports = function(results) {
                 engineId: "eslint",
                 ruleId: msg.ruleId,
                 primaryLocation: {
-                    message: roleDocsUrl,
+                    message: ruleDocsUrl,
                     // message: msg.message,
                     filePath: correctedPath,
                     textRange: {
