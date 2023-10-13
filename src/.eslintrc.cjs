@@ -23,6 +23,6 @@ module.exports = {
     },
     "plugins": ['my-meetup-rules'],
     "rules": {
-        'my-meetup-rules/no-use-pippo': 'error',
+        'my-meetup-rules/no-use-pippo': 1,
     }
 }
