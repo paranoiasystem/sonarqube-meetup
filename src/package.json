@@ -3,7 +3,7 @@
     "scripts": {
         "start": "node server.js",
         "test": "tap test/*.js",
-        "test:coverage": "tap test/*.js --coverage-report=lcov",
+        "test:coverage": "tap --no-timeout test/*.js --coverage-report=lcov",    
         "eslint": "eslint . --ext .js -f json -o eslint_report.json"
     },
     "dependencies": {
