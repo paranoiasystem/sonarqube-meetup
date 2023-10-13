@@ -6,9 +6,11 @@
         "test:coverage": "tap test/*.js --coverage-report=lcov"
     },
     "dependencies": {
+        "eslint-plugin-my-meetup-rules": "file:../eslint-plugin-my-meetup-rules",
         "fastify": "^4.23.2"
     },
     "devDependencies": {
+        "eslint": "^8.51.0",
         "tap": "^18.4.2"
     }
 }

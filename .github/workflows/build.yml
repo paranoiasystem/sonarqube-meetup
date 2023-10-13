@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         working-directory: ./src
         run: npm install
+      - name: Run ESLint
+        working-directory: ./src
+        run: npx eslint . --ext .js -f json -o eslint_report.json
       - name: Test coverage
         working-directory: ./src
         run: npm run test:coverage
